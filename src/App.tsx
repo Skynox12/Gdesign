@@ -4,7 +4,7 @@ import './css/Footer.css';
 import './css/Header.css';
 import './css/Main.css';
 
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Cqnf from './components/cqnf/Cqnf';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
@@ -15,13 +15,13 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />}>
             <Route path="/ce-que-nous-faisons" element={<Cqnf />} />
           </Route>
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
       <Footer />
     </div>
   )
