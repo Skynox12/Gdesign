@@ -1,27 +1,27 @@
-import './App.css'
-import './css/Main.css';
-import './css/Header.css';
-import './css/Footer.css';
+import './App.css';
 import './css/Cqnf.css';
+import './css/Footer.css';
+import './css/Header.css';
+import './css/Main.css';
 
-import Footer from './components/footer/Footer'
-import Header from './components/header/Header'
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
-import Main from './components/main/Main';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Cqnf from './components/cqnf/Cqnf';
+import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
+import Main from './components/main/Main';
 
 function App() {
 
   return (
     <div className="App">
       <Header />
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
-          <Route path="/Gdesign/" element={<Main />}>
-            <Route path="ce-que-nous-faisons" element={<Cqnf />} />
+          <Route path="/" element={<Main />}>
+            <Route path="/ce-que-nous-faisons" element={<Cqnf />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <Footer />
     </div>
   )
