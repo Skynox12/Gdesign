@@ -1,0 +1,26 @@
+:root {
+  --title-color: #BDA039;
+  --font-family: sans-serif, Arial;
+  --color: white;
+  --background-color: #282c34;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: var(--font-family);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 20rem;
+  min-height: 100vh;
+
+  background-color: var(--background-color);
+}
+
+@media (prefers-color-scheme: light) {
+  
+}

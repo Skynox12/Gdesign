@@ -1,0 +1,33 @@
+.header {
+    grid-area: Header;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 5fr 2fr;
+    grid-template-areas: "Title" "Navbar";
+}
+
+.title {
+    grid-area: Title;
+    padding: 0.5rem;
+    font-size: 3rem;
+    color: var(--title-color);
+    font-weight: bold;
+    width: 100%;
+
+    display: flex;
+}
+
+.navbar {
+    grid-area: Navbar;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--color);
+    font-size: 1.5rem;
+}

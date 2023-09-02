@@ -1,0 +1,14 @@
+.App {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas: "Header" "Main" "Footer";
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
