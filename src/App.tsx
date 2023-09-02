@@ -17,7 +17,7 @@ function App() {
       <Header />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Main />}>
+          <Route path="/Gdesign/" element={<Main />}>
             <Route path="ce-que-nous-faisons" element={<Cqnf />} />
           </Route>
         </Routes>
